@@ -1,3 +1,3 @@
 # SortedMap
 
-Tipo de dato abstracto, implementado con un árbol AVL
+Tipo de dato abstracto implementado con un árbol AVL
