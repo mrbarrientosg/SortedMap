@@ -24,7 +24,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "SortedMap.h"
+#include "sorted_map.h"
 
 int cmp(const void * a, const void * b) {
     const int * A = a;
@@ -34,54 +34,54 @@ int cmp(const void * a, const void * b) {
 
 int main(int argc, const char * argv[]) {
     
-    SortedMap * map = createSortedMap(cmp);
+    sorted_map *map = sorted_map_init (cmp, free);
     
-    int * data = NULL;
+    int *data = NULL;
     
     for (int i = 1; i <= 10; i++) {
-        data = malloc(sizeof(int));
+        data = malloc (sizeof (int));
         *data = i;
-        insertSortedMap(map, data, data);
+        sorted_map_insert (map, data, data);
     }
     
     int key = 10;
-    eraseKeySortedMap(map, &key);
+    sorted_map_remove_key (map, &key);
     
     key = 9;
-    eraseKeySortedMap(map, &key);
+    sorted_map_remove_key(map, &key);
     
     key = 4;
-    eraseKeySortedMap(map, &key);
+    sorted_map_remove_key(map, &key);
     
     key = 3;
-    eraseKeySortedMap(map, &key);
+    sorted_map_remove_key(map, &key);
     
     //    key = 7;
-    //    eraseKeySortedMap(map, &key);
+    //    sorted_map_remove_key (map, &key);
     //
     //    key = 1;
-    //    eraseKeySortedMap(map, &key);
+    //    sorted_map_remove_key (map, &key);
     //
     //    key = 2;
-    //    eraseKeySortedMap(map, &key);
+    //    sorted_map_remove_key (map, &key);
     //
     //    key = 6;
-    //    eraseKeySortedMap(map, &key);
+    //    sorted_map_remove_key (map, &key);
     //
     //    key = 8;
-    //    eraseKeySortedMap(map, &key);
+    //    sorted_map_remove_key (map, &key);
     //
     //    key = 5;
-    //    eraseKeySortedMap(map, &key);
+    //    sorted_map_remove_key (map, &key);
     
-    data = firstSortedMap(map);
+    data = sorted_map_first (map);
     
     while (data) {
-        printf("%d\n", *data);
-        data = nextSortedMap(map);
+        printf ("%d\n", *data);
+        data = sorted_map_next (map);
     }
     
-    removeAllSortedMap(map);
+    sorted_map_release (&map);
     
     return 0;
 }

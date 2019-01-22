@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D429F10A212A59F300651357 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D429F109212A59F300651357 /* main.c */; };
-		D429F112212A5A0700651357 /* SortedMap.c in Sources */ = {isa = PBXBuildFile; fileRef = D429F110212A5A0700651357 /* SortedMap.c */; };
+		D4D784A521F6B1B4003B9FEA /* sorted_map.c in Sources */ = {isa = PBXBuildFile; fileRef = D4D784A421F6B1B4003B9FEA /* sorted_map.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		D429F106212A59F300651357 /* SortedMap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortedMap; sourceTree = BUILT_PRODUCTS_DIR; };
 		D429F109212A59F300651357 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		D429F110212A5A0700651357 /* SortedMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SortedMap.c; sourceTree = "<group>"; };
-		D429F111212A5A0700651357 /* SortedMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortedMap.h; sourceTree = "<group>"; };
+		D4D784A321F6B1B4003B9FEA /* sorted_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sorted_map.h; sourceTree = "<group>"; };
+		D4D784A421F6B1B4003B9FEA /* sorted_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sorted_map.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				D429F109212A59F300651357 /* main.c */,
-				D429F110212A5A0700651357 /* SortedMap.c */,
-				D429F111212A5A0700651357 /* SortedMap.h */,
+				D4D784A321F6B1B4003B9FEA /* sorted_map.h */,
+				D4D784A421F6B1B4003B9FEA /* sorted_map.c */,
 			);
 			path = SortedMap;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D429F10A212A59F300651357 /* main.c in Sources */,
-				D429F112212A5A0700651357 /* SortedMap.c in Sources */,
+				D4D784A521F6B1B4003B9FEA /* sorted_map.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
